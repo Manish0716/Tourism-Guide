@@ -40,7 +40,6 @@ html {
   background-image: url("./images/beach1.jpg");
   min-height: 100%;
 }
-
 .content-text {
   position: absolute;
   text-align: center;
@@ -63,23 +62,29 @@ html {
   padding: 50px 80px;
 }
 .section-dark {
-  background-color: #282e34;
+  background-color: #282e34;  
   color: #ddd;
 }
-.border {
+.title-heading {
   background-color: #111;
   color: white;
   padding: 20px;
 }
-.border-light {
+.title-heading-light {
   opacity: 0.5;
 }
-@media (max-width: 20px) {
+@media only screen and (max-width: 100px) {
   .home-image-1,
   .home-image-2,
   .home-image-3,
   .home-image-4,
   .home-image-5 {
     background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .title-heading {
+    font-size: 15px;
+    padding: 15px;
   }
 }
